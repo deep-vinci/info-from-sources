@@ -12,9 +12,9 @@ body {
 }
 ```
 [kevin powell, Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To)
-use `%` for max-width for width
-1 `ch` = width of 'o' in any font, 45-70 ch is a good width
-for padding btns use `em` because the if you increase the padding the font size will grow with them
-for text margins use `em` as for headers it will be respectively more, giving good whitespaces etc
-for media queries, use `em` 
-for shadows, border etc use `px`
+- use `%` for max-width for width
+- 1 `ch` = width of 'o' in any font, 45-70 ch is a good width
+- for padding btns use `em` because the if you increase the padding the font size will grow with them
+- for text margins use `em` as for headers it will be respectively more, giving good whitespaces etc
+- for media queries, use `em` 
+- for shadows, border etc use `px`
