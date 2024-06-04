@@ -38,8 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 </details>
 
-[css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
-
+<br>
 
 - [css-tricks](https://css-tricks.com/fun-viewport-units/)  : difference between % and vw is most similar to the difference between em and rem. A % length is relative to local context (containing element) width, while a vw length is relative to the full width of the browser window.
 
