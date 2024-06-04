@@ -71,6 +71,7 @@ body {
 
 ## Reading the formal syntax of css
 [mdn docs for formal syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+![](assets/formal-grammar-css)
 
 Reading formal syntax for CSS can be a bit tricky at first, but once you understand the notation, it becomes easier to follow. Here's a breakdown of how to read CSS formal syntax:
 
