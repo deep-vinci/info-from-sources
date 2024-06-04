@@ -18,3 +18,11 @@ body {
 - for text margins use `em` as for headers it will be respectively more, giving good whitespaces etc
 - for media queries, use `em` 
 - for shadows, border etc use `px`
+
+[popular font stack on css-tricks](https://css-tricks.com/snippets/css/system-font-stack/)
+
+```html
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+```
