@@ -2,8 +2,10 @@
 
 <details>
 <summary>
-  [css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
+  
+[css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
 </summary>
+  
 ```css
 /*
   Josh's Custom CSS Reset
