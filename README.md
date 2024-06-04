@@ -1,5 +1,44 @@
 # info-from-sources
 
+<details>
+<summary>
+  [css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
+</summary>
+```css
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+```
+
+</details>
+
+[css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
+
+
 - [css-tricks](https://css-tricks.com/fun-viewport-units/)  : difference between % and vw is most similar to the difference between em and rem. A % length is relative to local context (containing element) width, while a vw length is relative to the full width of the browser window.
 
 ```css
