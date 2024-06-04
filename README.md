@@ -40,7 +40,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 <br>
 
-- [css-tricks](https://css-tricks.com/fun-viewport-units/)  : difference between % and vw is most similar to the difference between em and rem. A % length is relative to local context (containing element) width, while a vw length is relative to the full width of the browser window.
+## [css-tricks](https://css-tricks.com/fun-viewport-units/)  
+difference between % and vw is most similar to the difference between em and rem. A % length is relative to local context (containing element) width, while a vw length is relative to the full width of the browser window.
 
 ```css
 html {
@@ -51,7 +52,7 @@ body {
   font-size: 2.1rem; // this is 21px
 }
 ```
-[kevin powell, Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To)
+## [kevin powell, Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To)
 - use `%` for max-width for width
 - 1 `ch` = width of 'o' in any font, 45-70 ch is a good width
 - for padding btns use `em` because the if you increase the padding the font size will grow with them
@@ -59,15 +60,59 @@ body {
 - for media queries, use `em` 
 - for shadows, border etc use `px`
 
-[popular font stack on css-tricks](https://css-tricks.com/snippets/css/system-font-stack/)
+## [popular font stack on css-tricks](https://css-tricks.com/snippets/css/system-font-stack/)
 
 ```html
 body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 ```
+<br>
 
-[background css shorthand formal syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+## Reading the formal syntax of css
+[mdn docs for formal syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+
+Reading formal syntax for CSS can be a bit tricky at first, but once you understand the notation, it becomes easier to follow. Here's a breakdown of how to read CSS formal syntax:
+
+1. **Value Definitions**:
+   - `||` means "or" (e.g., `<length> || <percentage>` means a value can be either a length or a percentage).
+   - `&&` means "and" (e.g., `<'border-width'> && <'border-style'> && <'border-color'>` means all three values are required).
+   - `?` means optional (e.g., `[ <'border-top-width'> || <'border-left-width'> ]?` means these values are optional).
+   - `*` means zero or more occurrences (e.g., `<line-width>*` means zero or more occurrences of `<line-width>`).
+   - `+` means one or more occurrences (e.g., `<length>+` means one or more occurrences of `<length>`).
+   - `#` means "the preceding value can be repeated" (e.g., `<color>#` means the `<color>` value can be repeated).
+
+2. **Formal Syntax Values**:
+   - `<length>` represents a length value (e.g., `10px`, `2rem`).
+   - `<percentage>` represents a percentage value (e.g., `50%`).
+   - `<color>` represents a color value (e.g., `#ff0000`, `rgb(255, 0, 0)`, `red`).
+   - `<url>` represents a URL value (e.g., `url(image.jpg)`).
+   - `<integer>` represents an integer value (e.g., `5`).
+   - Values enclosed in angle brackets (`< >`) represent data types or syntax placeholders.
+
+3. **Grouping**:
+   - Square brackets `[ ]` are used to group items together.
+   - Parentheses `( )` are used to group complex expressions.
+
+4. **Literal Values**:
+   - Values enclosed in single quotes `' '` represent literal values (e.g., `'border-width'`).
+
+5. **Comments**:
+   - `/* ... */` is used for multi-line comments.
+   - `//` is used for single-line comments.
+
+Here's an example of a formal syntax for the `border` property:
+
+```
+border: <line-width> || <line-style> || <'color'>
+```
+
+This syntax means that the `border` property can take one, two, or three values. The first value can be a `<line-width>` (e.g., `2px`), the second value can be a `<line-style>` (e.g., `solid`), and the third value can be a literal `'color'` (e.g., `'red'`).
+
+By understanding the notation used in formal syntax, you can better comprehend how CSS properties and values should be structured and used.
+
+
+## [background css shorthand formal syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 
 Sure, here's a more concise and easier-to-read syntax for the `background` property in CSS:
 
