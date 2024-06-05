@@ -3,7 +3,7 @@
 <details>
 <summary>
   
-[css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
+`good default reset` [css reset by joshwacomeau](https://www.joshwcomeau.com/css/custom-css-reset/)
 </summary>
   
 ```css
@@ -52,7 +52,7 @@ body {
   font-size: 2.1rem; // this is 21px
 }
 ```
-## [kevin powell, Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To)
+## `youtube video explaining where one should use what unit generally` [kevin powell, Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To)
 - use `%` for max-width for width
 - 1 `ch` = width of 'o' in any font, 45-70 ch is a good width
 - for padding btns use `em` because the if you increase the padding the font size will grow with them
@@ -70,7 +70,11 @@ body {
 <br>
 
 ## Reading the formal syntax of css
-[mdn docs for formal syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+
+`all the nooks and quirks of the formal grammar syntax with a quick symmary` [mdn docs for formal syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+
+<br>
+
 ![](assets/formal-grammar-css)
 
 Reading formal syntax for CSS can be a bit tricky at first, but once you understand the notation, it becomes easier to follow. Here's a breakdown of how to read CSS formal syntax:
@@ -167,3 +171,17 @@ background: url("pattern.png") 20px 30px/100px 200px repeat-x fixed padding-box 
             linear-gradient(to bottom, #fff, #ccc) center/cover no-repeat border-box,
             #f0f0f0;
 ```
+
+## Element Positioning 
+
+`Really good article` [css tricks positioining guide](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+
+`
+
+while using fixed for `nav` one can use
+```html
+h3 {
+  scroll-margin-top: 5rem; /* whatever is a nice number that gets you past the header */
+}
+```
+[ Css fix text below header ](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
