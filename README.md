@@ -185,3 +185,28 @@ h3 {
 }
 ```
 [ Css fix text below header ](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
+
+## The CSS functions
+
+- `min()` - resolves to the smallest unit given in the args
+- `max()` - resolves to the largest unit given in the args
+- `clamp()` - for clamp the value would be stuck between range, no matter what the prefered value is. if pref value is lower than low-end than it would clamp to that or to high-end if pref value is  higher than high-end
+- `calc()` - 
+
+for example, 
+`margin-top: max(20vh, 2rem)` in this the margin on pc would be 20vh as its probably larger than 2rem whcih is 16*2px but on phones the rem would be larger as the screen is not big enough
+`width: min(500px, 100vw)` for pc it would be 500px but for phones it would be 100vw as it is smaller than 500px
+
+clamp() is a great way to make elements fluid and responsive. clamp() takes 3 values:
+```
+h1 {
+  font-size: clamp(320px, 80vw, 60rem);
+}
+```
+the smallest value (320px)
+the ideal value (80vw)
+the largest value (60rem)
+The clamp() CSS function uses these values to set the smallest value, ideal value and largest value. In the above example, this would mean the smallest acceptable font-size would be 320px and the largest would be 60rem. The ideal font-size would be 80vw.
+
+
+for viewports max is useful to keep the biggest size for readability/accessibility etc 
