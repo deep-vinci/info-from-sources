@@ -247,3 +247,22 @@ margin: auto;
 ## CSS specificity
 
 // tbd using google web guide
+
+## CSS floats
+
+Floats are archaic way to align the content, without a lot of freedom, unless you use lots of hacks
+
+```
+float: left
+```
+- This property makes the block level element float to the left, and the block level elements beneath it ignore the floated element like its really floating in *sky*
+
+- to mitigate that issue you need to use `clear: both` inside the div that you want to make follow the normal block level display, one after another no matter if its floated or not.
+
+uncleared footer
+![](assets/unclearedfooter.webp)
+
+cleared footer
+![](assets/clearedfooter.webp)
+
+in above example it can be seen that clearing the footer led to it following the block properties rather than ignornig the float size
