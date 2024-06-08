@@ -210,3 +210,37 @@ The clamp() CSS function uses these values to set the smallest value, ideal valu
 
 
 for viewports max is useful to keep the biggest size for readability/accessibility etc 
+
+
+## CSS box model
+
+Block model `<div>`
+- width is the parent containers width
+- height is based on content height
+
+Inline model `<span>`
+- width depends on the content width
+
+`Margin > Border > Padding > content < Padding < Border < Margin`
+
+This piece of code ensures that for the widht of element, padding and border is included inside and content width is calculated
+```
+box-sizing: border-box;
+```
+### Horizontally Centering block level elements using margin 
+
+child element should not extend to the entire parent element 
+
+### similarly vertical centering doesn't works
+[w3 spec mentions "If 'margin-top', or 'margin-bottom' are 'auto', their used value is 0."](https://www.w3.org/TR/CSS2/visudet.html#Computing_heights_and_margins)
+
+```
+width: 200px; 
+margin: auto;
+```
+
+### Padding 
+`padding: vertical horizontal;`
+
+`padding: top right bottom left;`
+
