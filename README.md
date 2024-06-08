@@ -266,3 +266,4 @@ cleared footer
 ![](assets/clearedfooter.webp)
 
 in above example it can be seen that clearing the footer led to it following the block properties rather than ignornig the float size
+
