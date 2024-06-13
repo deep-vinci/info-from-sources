@@ -23,7 +23,7 @@ let closure = outer();
 closure.outerVariable;
 ```
 ##### fantastic usecase of closures
-```
+```js
 const Player = (name, level) => {
     let health = level * 2;
     const getLevel = () => level;
