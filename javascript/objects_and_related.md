@@ -23,3 +23,12 @@ let closure = outer();
 closure.outerVariable;
 ```
 
+#### Closures vs Function Factories
+```
+- All functions in JavaScript are closures so by having a function you also have a closure. 
+
+-Factory functions are a specialized kind of function whose purpose is to create new objects. 
+
+Not all functions are factories but all factories, since they're functions, are closures. Additionally not all factories would make use of closure variables so if they aren't dependent on themselves being closures.
+
+```
