@@ -48,6 +48,8 @@ container < 900px or 750px
 
 using `flex-wrap: wrap;` and then `width:300px` & `flex: 1 1 auto;` inside flex item does the same job as auto-fill 
 *According to the W3 specification on auto-fill and auto-fit, both of these functions will return “the largest possible positive integer” without the grid items overflowing their container*
+
+- can also do `flex: 1 1 100%` depending on requirements, this will ensure all the items take 50%
 ```
 ------------------
 |   0   |    1   |
