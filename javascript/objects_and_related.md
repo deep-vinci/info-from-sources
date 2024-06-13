@@ -1,3 +1,5 @@
+
+[bro code closure, yt](https://www.youtube.com/watch?v=80O6L2Ez3GM)
 ```
 Closures 
     A function with preserved data.
