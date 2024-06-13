@@ -22,7 +22,38 @@ function outer() {
 let closure = outer();
 closure.outerVariable;
 ```
-
+##### fantastic usecase of closures
+```
+const Player = (name, level) => {
+    let health = level * 2;
+    const getLevel = () => level;
+    const getName  = () => name;
+    const die = () => {
+      // uh oh
+    };
+    const damage = x => {
+      health -= x;
+      if (health <= 0) {
+        die();
+      }
+    };
+    const attack = enemy => {
+      if (level < enemy.getLevel()) {
+        damage(1);
+        console.log(`${enemy.getName()} has damaged ${name}`);
+      }
+      if (level >= enemy.getLevel()) {
+        enemy.damage(1);
+        console.log(`${name} has damaged ${enemy.getName()}`);
+      }
+    };
+    return {attack, damage, getLevel, getName};
+  };
+  
+  const jimmie = Player('jim', 10);
+  const badGuy = Player('jeff', 5);
+  jimmie.attack(badGuy);
+```
 #### Closures vs Function Factories
 ```
 - All functions in JavaScript are closures so by having a function you also have a closure. 
@@ -32,3 +63,12 @@ closure.outerVariable;
 Not all functions are factories but all factories, since they're functions, are closures. Additionally not all factories would make use of closure variables so if they aren't dependent on themselves being closures.
 
 ```
+
+#### encapsulation 
+
+```
+using IIFE we can create namespaces that reduce variable name pollution in the main code base
+
+- for this module pattern exists as well, where you can use different files for different functions and just invoke them
+```
+
