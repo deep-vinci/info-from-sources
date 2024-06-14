@@ -17,7 +17,7 @@
 - instances can inherit properties from the parent objects
 
 
-[1](https://www.theodinproject.com/lessons/node-path-javascript-objects-and-object-constructors) [2](https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript) [3](https://javascript.info/class#not-just-a-syntactic-sugar)
+[[1]](https://www.theodinproject.com/lessons/node-path-javascript-objects-and-object-constructors) [2](https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript) [3](https://javascript.info/class#not-just-a-syntactic-sugar)
 
 ### Closure
 [bro code closure, yt](https://www.youtube.com/watch?v=80O6L2Ez3GM)
