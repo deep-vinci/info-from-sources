@@ -1,4 +1,23 @@
+### Objects
 
+- object constructors - to replicate same objects multiple instances, this saves the data just like closures but more inefficiently
+- object prototype 
+```
+[[prototype]] 
+- all the native and user built objects have this property by default
+- can be accessed using Object.getProtoypeOf(objX) / objX.__proto__
+- for object constructors like Array, Date they can be accessed using Array.prototype
+- protypal inheritance is set using Object.setPrototypeOF(inherit ,inheriting from) 
+- this basically saves the prototype of second obj to first one so if you have a function in the first object it will be inherited to second object
+```
+#### uses of proto
+- functions can be attached to objects .prototype to minimize mem usage as it's function is not initiated with every new object instance
+- instances can inherit properties from the parent objects
+
+
+
+
+### Closure
 [bro code closure, yt](https://www.youtube.com/watch?v=80O6L2Ez3GM)
 ```
 Closures 
@@ -7,7 +26,7 @@ Closures
 
     - state of variable in outer scope are "saved" (lexical environemnt - which has all the local variables decl inside it)
 
-    - variable in outer scope are "private" unless returned explicitly (ex 1)
+    - variable in outer scope are "private" unless returned expicitly (ex 1)
 
 ```
 
