@@ -84,6 +84,8 @@ const Player = (name, level) => {
 Not all functions are factories but all factories, since they're functions, are closures. Additionally not all factories would make use of closure variables so if they aren't dependent on themselves being closures.
 
 ```
+#### Factory function
+they levy the power of closures. Instead of using the new keyword to create an object, factory functions set up and return the new object when you call the function. 
 
 #### encapsulation 
 
