@@ -4,6 +4,8 @@ Every function has a **execution context**. Execution context is just a internal
 
 A function has only one **execution context**.
 
+>**Base Case** is the only explicit solution of the recursive function.
+
 ### Nested Functions Working
 
 1. Function is paused
