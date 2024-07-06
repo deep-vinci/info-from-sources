@@ -10,4 +10,4 @@ A straightforward method is used to create the binary search tree.
 `2` is lesser root node and than the parent node `3` so its left of it
 `17` is greater than the root node so its left child of `19` 
 
-![](assets/bst.png)
+![](../assets/bst.png)
