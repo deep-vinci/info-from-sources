@@ -30,3 +30,36 @@ res.writeHead(200, {'Content-Type' : 'text/html'})
 // http.createServer() has a req arg that represents request from client
 console.log(req.url)
 ```
+
+## Fs Module
+
+- Read File
+- Create File
+- Update File
+- Delete File
+- Rename File
+
+#### Read File
+
+```js
+fs.readFile("demo.txt", "utf-8", (err, data) => {
+    console.log(data);
+})
+```
+
+#### Create File
+
+```js
+fs.appendFile("file", content)
+fs.writeFile("file", content)
+```
+
+#### Delete File
+```js
+fs.unlink("file")
+```
+
+#### Rename File
+```js
+fs.rename("old", "new")
+```
